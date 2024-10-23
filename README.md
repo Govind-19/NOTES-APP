@@ -1,122 +1,53 @@
 # NOTES APP
 
-A simple **NOTES** application built with React Hooks. Check out the live demo [here](https://noteappbygo.ccbp.tech/).
+I built a simple **NOTES** application using React Hooks. It’s designed to provide an intuitive way for users to create, manage, and view notes efficiently. Check out the live demo [here](https://noteappbygo.ccbp.tech/).
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js-hooks/notes-app-output.gif" alt="notes app output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+![Notes App Output](https://assets.ccbp.in/frontend/content/react-js-hooks/notes-app-output.gif)
 
-### Design Files
+## Key Features
 
-<details>
-<summary>Click to view</summary>
+- **Responsive Design**: The app works seamlessly across different screen sizes, from mobile devices to desktops.
+- **Add & Manage Notes**: Users can create notes with a title and description, which are then dynamically listed on the screen.
+- **Persistent State**: Each note added stays visible during the session, allowing users to manage and track multiple notes.
+- **Styling**: Styled-components have been used to ensure a clean and scalable design, with predefined color schemes and fonts.
 
-- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js-hooks/notes-app-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Empty Notes View](https://assets.ccbp.in/frontend/content/react-js-hooks/notes-app-empty-lg-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Notes View](https://assets.ccbp.in/frontend/content/react-js-hooks/notes-app-notes-lg-output.png)
+## Components Structure
 
-</details>
+The app’s architecture is modular, ensuring ease of maintenance and scalability. Below is the breakdown of components:
 
-### Set Up Instructions
+- **Notes Component**: Handles the overall notes display and form to add new notes.
+- **NoteItem Component**: Displays each individual note with its content.
 
-<details>
-<summary>Click to view</summary>
+![Component Structure](https://assets.ccbp.in/frontend/content/react-js-hooks/notes-app-component-structure-breakdown.png)
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+## Technologies Used
 
-### Completion Instructions
+- **React with Hooks** for building the dynamic UI and handling state
+- **Styled Components** for CSS-in-JS styling
+- **Responsive Design** to ensure the app adapts beautifully across devices
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+## Design and Visuals
 
-The app must have the following functionalities
+The app supports various screen sizes and visual states, ensuring a consistent user experience. Here are some of the design views:
 
-- Initially, the title and note inputs should be empty and [Empty Notes View](https://assets.ccbp.in/frontend/content/react-js-hooks/notes-app-empty-lg-output.png) should be displayed
-- When non-empty values are provided for the title and notes and the **Add** button is clicked,
-  - A new note item should be added to the list of notes with provided details
+- [Small Screen View](https://assets.ccbp.in/frontend/content/react-js-hooks/notes-app-sm-outputs.png)
+- [Empty Notes View (Desktop)](https://assets.ccbp.in/frontend/content/react-js-hooks/notes-app-empty-lg-output.png)
+- [Notes View (Desktop)](https://assets.ccbp.in/frontend/content/react-js-hooks/notes-app-notes-lg-output.png)
 
-</details>
+## How I Built It
 
-<details>
-<summary>Components Structure</summary>
+To get the app up and running:
+1. **Install dependencies**: 
+    ```bash
+    npm install
+    ```
+2. **Start the app**:
+    ```bash
+    npm start
+    ```
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js-hooks/notes-app-component-structure-breakdown.png" alt="notes app component structure breakdown" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+The UI is responsive and user-friendly, styled with a modern look using **Roboto** and **Bree Serif** fonts. The app includes key components like a note-taking form, a dynamic list of notes, and handling of empty and populated states effectively.
 
-</details>
+## Demo
 
-<details>
-<summary>Implementation Files</summary>
-<br/>
-
-Use these files to complete the implementation:
-
-- `src/components/Notes/index.js`
-- `src/components/Notes/styledComponents.js`
-- `src/components/NoteItem/index.js`
-- `src/components/NoteItem/styledComponents.js`
-</details>
-
-### Important Note
-
-<details>
-<summary>Click to view</summary>
-
-<br/>
-
-**The following instructions are required for the tests to pass**
-
-- **Styled Components** should be used for styling purposes
-- HTML input element for the title should have the placeholder as **Title**
-- HTML textarea element for notes should have the placeholder as **Take a Note...**
-- **Bree Serif** should be applied as `font-family` for **Notes** heading
-
-</details>
-
-### Resources
-
-<details>
-<summary>Image URLs</summary>
-
-- [https://assets.ccbp.in/frontend/hooks/empty-notes-img.png](https://assets.ccbp.in/frontend/hooks/empty-notes-img.png) alt should be **notes empty**
-
-</details>
-
-<details>
-<summary>Colors</summary>
-
-<br/>
-
-<div style="background-color: #4c63b6; width: 150px; padding: 10px; color: white">Hex: #4c63b6</div>
-<div style="background-color: #475569; width: 150px; padding: 10px; color: white">Hex: #475569</div>
-<div style="background-color: #1e293b; width: 150px; padding: 10px; color: white">Hex: #1e293b</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #334155; width: 150px; padding: 10px; color: white">Hex: #334155</div>
-<div style="background-color: #d8d8d8; width: 150px; padding: 10px; color: black">Hex: #d8d8d8</div>
-<div style="background-color: #aab8c8; width: 150px; padding: 10px; color: black">Hex: #aab8c8</div>
-<div style="background-color: #cbd5e1; width: 150px; padding: 10px; color: black">Hex: #cbd5e1</div>
-<br/>
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-- Roboto
-- Bree Serif
-
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+You can experience the app live [here](https://noteappbygo.ccbp.tech/).
