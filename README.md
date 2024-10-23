@@ -1,6 +1,6 @@
-In this project, let's build a **Notes App** by applying the concepts we have learned till now.
+# NOTES APP
 
-### Refer to the image below:
+A simple **NOTES** application built with React Hooks. Check out the live demo [here](https://noteappbygo.ccbp.tech/).
 
 <br/>
 <div style="text-align: center;">
